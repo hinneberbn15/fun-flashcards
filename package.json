@@ -1,0 +1,116 @@
+{
+  "name": "react-playground",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.13.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.5.1",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.7.2",
+    "normalize.css": "^7.0.0",
+    "prettier": "^1.9.1",
+    "prop-types": "^15.6.0",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "resolve-url-loader": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "svg-url-loader": "^2.3.1",
+    "ui-toolkit": "^1.18.5",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "scripts": {
+    "start": "webpack-dev-server -d --config webpack.config.js",
+    "watch": "webpack -progress --watch",
+    "prod": "webpack -p",
+    "test": "jest"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules"
+  ],
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "plugins": [
+      "json",
+      "react",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "impliedStrict": true,
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "settings": {
+      "propWrapperFunctions": [
+        "strictPropTypes",
+        "strictPropTypes.allRequired"
+      ]
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "dot-notation": "error",
+      "no-plusplus": "error",
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "all",
+          "ignoreRestSiblings": false,
+          "argsIgnorePattern": "^_",
+          "varsIgnorePattern": "^_unused"
+        }
+      ],
+      "no-var": "error",
+      "prefer-const": "error",
+      "semi": [
+        "error",
+        "always"
+      ],
+      "react/jsx-no-bind": "error",
+      "react/no-did-update-set-state": "error",
+      "react/no-unused-prop-types": "error",
+      "react/prop-types": "error"
+    }
+  }
+}

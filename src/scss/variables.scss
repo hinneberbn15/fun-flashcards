@@ -1,0 +1,68 @@
+$uitk-icon-path: $asset-build-path + '/icons/nm-px/glyphs';
+
+//
+//---------------------//
+// Element Spacing     //
+//   * taken from uitk //
+//---------------------//
+
+$es-tiny: 0.25rem;
+$es-small: 0.5rem;
+$es-medium: 1rem;
+$es-large: 1.5rem;
+$es-xlarge: 2rem;
+
+//
+//------------------------------------------------------------------//
+// Colors                                                           //
+// @see https://uitk.learnvest.com/v/1.18.0/style-guide/colors.html //
+//------------------------------------------------------------------//
+
+$brand-primary-color: #002b49;
+$brand-secondary-color: #ffb81c;
+$info-color: #0068b3;
+$dull-blue: #7ea3be;
+$off-white: #f1f1f1;
+$light-gray: #e6e6e6;
+$medium-gray: #ccc;
+$dark-gray: #9c9c9c;
+$off-black: #444;
+$success-color: #16b161;
+$primary-color: #00abd3;
+$bright-blue: #1e90ff;
+$alice-blue: #f0f8ff;
+$modal-header-color: #0090f9;
+
+//
+//--------------//
+// Measurements //
+//--------------//
+
+$icon-small: 1rem;
+$icon-medium: 1.4rem;
+$icon-large: 1.8rem;
+
+$font-normal: initial;
+$font-small: 0.875rem;
+$font-medium: 1rem;
+$font-large: 1.5rem;
+$font-x-large: 2rem;
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-bold: 500;
+
+$site-padding-hor: 20px;
+
+//
+//------------------//
+// Site Breakpoints //
+//------------------//
+
+$screen-md-min: 641px;
+$screen-lg-min: 1025px;
+$screen-xl-min: 1201px;
+
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
