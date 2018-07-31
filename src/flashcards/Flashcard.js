@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
 import _ from 'lodash';
 
 export default class FlashCard extends Component {
@@ -28,7 +30,7 @@ export default class FlashCard extends Component {
     // ]);
   }
 
-  handleChange(event) {
+  handleChange(event){
     this.setState({ value: event.target.value });
   }
 
@@ -102,14 +104,14 @@ export default class FlashCard extends Component {
 
 function FrontOfCard({ topNum, bottomNum, onChange, onClick }) {
   return (
-    <div className="card">
+    <Card>
       <div>
         <h2 className="text-center">{topNum}</h2>
         <h2 className="text-center">{bottomNum}</h2>
       </div>
       <input type="text" onChange={onChange} />
-      <button onClick={onClick}>Submit</button>
-    </div>
+      <Button onClick={onClick} variant="outlined" >Submit</Button>
+    </Card>
   );
 }
 
@@ -119,7 +121,7 @@ function SuccessMessage({ onClick }) {
       <span className="icon" />
       <h3>Great Job!</h3>
       <div>
-        <button onClick={onClick}>Start New Round</button>
+        <Button onClick={onClick} variant="outlined" >Start New Round</Button>
       </div>
     </div>
   );
@@ -131,7 +133,7 @@ function FailMessage({ onClick }) {
       <span className="icon" />
       <h3>Wrong Answer. Keep Trying!</h3>
       <div>
-        <button onClick={onClick}>Start New Round</button>
+        <Button onClick={onClick} variant="outlined" >Start New Round</Button>
       </div>
     </div>
   );

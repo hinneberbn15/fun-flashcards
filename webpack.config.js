@@ -6,7 +6,7 @@ module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React Playground',
+      title: 'Fun Flashcards',
       template: './src/index.ejs'
     }),
     new webpack.HotModuleReplacementPlugin()
@@ -46,10 +46,6 @@ module.exports = {
           }
         },
         exclude: /node_modules/
-      },
-      {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader', 'resolve-url-loader']
       },
       {
         test: /\.svg/,
